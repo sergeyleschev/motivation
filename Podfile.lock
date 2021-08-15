@@ -1,0 +1,32 @@
+PODS:
+  - KeychainSwift (19.0.0)
+  - lottie-ios (3.2.3)
+  - ObjectMapper (4.2.0)
+  - SwiftTryCatch (0.0.1)
+  - SwiftyJSON (5.0.1)
+
+DEPENDENCIES:
+  - KeychainSwift
+  - lottie-ios
+  - ObjectMapper
+  - SwiftTryCatch
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - KeychainSwift
+    - lottie-ios
+    - ObjectMapper
+    - SwiftTryCatch
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  KeychainSwift: a06190cf933ad46b1e0abc3d77d29c06331715c7
+  lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  SwiftTryCatch: fb6d2b34abe48efd69578dac919293a44f95b481
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+
+PODFILE CHECKSUM: b370b789bc31633e29e08e7d84983125cc06eda2
+
+COCOAPODS: 1.10.2
