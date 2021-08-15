@@ -8,7 +8,7 @@ import WidgetKit
 
 @available(iOS 14, *)
 struct PrimaryQuote {
-    @AppStorage("primaryQuote", store: UserDefaults(suiteName: "group.com.siarhailiashchou.motivation")) var primaryQuoteData: Data = Data()
+    @AppStorage("primaryQuote", store: UserDefaults(suiteName: "group.com.sergeyleschev.motivation")) var primaryQuoteData: Data = Data()
     let primaryQuote: Quote
     
     func storeQuote() {

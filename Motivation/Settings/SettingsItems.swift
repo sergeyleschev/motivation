@@ -12,13 +12,13 @@ struct Items {
              color: .systemYellow,
              title: "Rate The App",
              section: .feedback,
-             url: "https://apps.apple.com/us/app/fitness-motivation/id?itsct=apps_box_link&itscg=30200"),
+             url: "https://apps.apple.com/us/app/fitness-motivation/id1581317324?itsct=apps_box_link&itscg=30200"),
         /*
         Item(image: "megaphone.fill",
              color: .systemOrange,
              title: "Feedback",
              section: .feedback,
-             url: "https://sergeyleschev.com/fitness-motivation/feedback"),
+             url: "http://motivations.coach/fitness-motivation/feedback"),
  */
 
         Item(image: "lock.shield.fill",

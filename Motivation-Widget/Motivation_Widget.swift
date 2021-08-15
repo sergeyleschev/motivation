@@ -12,7 +12,7 @@ struct MotivationEntry: TimelineEntry {
 }
 
 struct Provider: TimelineProvider {
-    @AppStorage("primaryQuote", store: UserDefaults(suiteName: "group.com.siarhailiashchou.motivation")) var primaryQuoteData: Data = Data()
+    @AppStorage("primaryQuote", store: UserDefaults(suiteName: "group.com.sergeyleschev.motivation")) var primaryQuoteData: Data = Data()
     
     func placeholder(in context: Context) -> MotivationEntry {
         let quote = Quote(id: "", quoteText: "Your favorite motivation can be displayed here", quoteAuthor: "Fitness", quoteGenre: "help")
