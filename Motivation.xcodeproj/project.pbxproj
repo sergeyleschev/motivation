@@ -7,10 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AEF23E39176789C05E67FB6 /* Pods_Motivation_Watch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7CC170EF90BDC2794B6F78 /* Pods_Motivation_Watch.framework */; };
 		5A2AAD2426C8631E00241A18 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A2AAD2326C8631E00241A18 /* Preview Assets.xcassets */; };
 		5A2AAD2626C8E05600241A18 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2AAD2526C8E05600241A18 /* Storage.swift */; };
+		5A82472C26CA3F0F00E6E7E2 /* ValueStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82472B26CA3F0F00E6E7E2 /* ValueStorage.swift */; };
+		5A82472F26CA3F6300E6E7E2 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82472E26CA3F6300E6E7E2 /* Common.swift */; };
+		5A82473126CA3FB200E6E7E2 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82473026CA3FB200E6E7E2 /* Application.swift */; };
+		5A82473326CA404900E6E7E2 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82473226CA404900E6E7E2 /* String.swift */; };
+		5A82473526CA407200E6E7E2 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82473426CA407200E6E7E2 /* Array.swift */; };
+		5A82473726CA408B00E6E7E2 /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82473626CA408B00E6E7E2 /* Numbers.swift */; };
+		5A82473926CA40A400E6E7E2 /* Collections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82473826CA40A400E6E7E2 /* Collections.swift */; };
+		5A82473B26CA40BA00E6E7E2 /* XTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82473A26CA40BA00E6E7E2 /* XTimer.swift */; };
+		5A82473D26CA40D000E6E7E2 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82473C26CA40D000E6E7E2 /* Date.swift */; };
+		5A82473F26CA40EA00E6E7E2 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82473E26CA40EA00E6E7E2 /* URL.swift */; };
+		5A82474126CA40FD00E6E7E2 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82474026CA40FD00E6E7E2 /* Formatter.swift */; };
+		5A82474326CA411500E6E7E2 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82474226CA411500E6E7E2 /* Bundle.swift */; };
+		5A82474626CA414C00E6E7E2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82474526CA414C00E6E7E2 /* Constants.swift */; };
+		5A82474826CA417F00E6E7E2 /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82474726CA417F00E6E7E2 /* MulticastDelegate.swift */; };
+		5A82474C26CA436900E6E7E2 /* QuotesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82474B26CA436900E6E7E2 /* QuotesService.swift */; };
+		5A82474E26CA45F800E6E7E2 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82474D26CA45F800E6E7E2 /* View.swift */; };
+		5A82475026CA462000E6E7E2 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82474F26CA462000E6E7E2 /* UIColor.swift */; };
+		5A82475326CA46B800E6E7E2 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82475126CA466A00E6E7E2 /* Geometry.swift */; };
+		5A82475426CA46C200E6E7E2 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82475126CA466A00E6E7E2 /* Geometry.swift */; };
+		5A82475526CA46CB00E6E7E2 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82474D26CA45F800E6E7E2 /* View.swift */; };
+		5A82475626CA46DB00E6E7E2 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82474F26CA462000E6E7E2 /* UIColor.swift */; };
+		5A82475826CA472500E6E7E2 /* AppReviewRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F0BE65256CD29000ABC037 /* AppReviewRequest.swift */; };
 		87CABD95E09FD7D8991D91C2 /* Pods_Motivation_AppClip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 390DD3CC52FF24BAAB516772 /* Pods_Motivation_AppClip.framework */; };
-		9308A1A725D1B72B00F5F0E9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9370A52B2545609A00F2C029 /* Extensions.swift */; };
 		9308A1B225D1B78000F5F0E9 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936886CA25469D460034F960 /* ButtonStyle.swift */; };
 		9308A1BD25D1B78E00F5F0E9 /* ViewToUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9370A51D25454CD100F2C029 /* ViewToUIImage.swift */; };
 		9308A1DE25D1B7EF00F5F0E9 /* ShareSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9370D5A625356310001CD387 /* ShareSheetView.swift */; };
@@ -22,7 +44,7 @@
 		933E2DE9264AF9C8008E8FE2 /* quotes1.json in Resources */ = {isa = PBXBuildFile; fileRef = 933E2DE7264AF9C8008E8FE2 /* quotes1.json */; };
 		933E2DF1264D51F9008E8FE2 /* sampleQuotes.json in Resources */ = {isa = PBXBuildFile; fileRef = 933E2DF0264D51F9008E8FE2 /* sampleQuotes.json */; };
 		933E2E22264D939B008E8FE2 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DEB57225284631006B9BF5 /* Quote.swift */; };
-		93426350254DC5840023B6FF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9370A52B2545609A00F2C029 /* Extensions.swift */; };
+		93426350254DC5840023B6FF /* QuoteCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9370A52B2545609A00F2C029 /* QuoteCD.swift */; };
 		9362130B252D787A009A7CDE /* QuoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9362130A252D787A009A7CDE /* QuoteDetailView.swift */; };
 		9362130D252ECBC1009A7CDE /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9362130C252ECBC1009A7CDE /* QuoteView.swift */; };
 		936886632545C8320034F960 /* QuoteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936886622545C8320034F960 /* QuoteListView.swift */; };
@@ -162,6 +184,24 @@
 		55A204CD8B51D02F022B84DC /* Pods-Motivation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivation.debug.xcconfig"; path = "Target Support Files/Pods-Motivation/Pods-Motivation.debug.xcconfig"; sourceTree = "<group>"; };
 		5A2AAD2326C8631E00241A18 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5A2AAD2526C8E05600241A18 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		5A82472B26CA3F0F00E6E7E2 /* ValueStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueStorage.swift; sourceTree = "<group>"; };
+		5A82472E26CA3F6300E6E7E2 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		5A82473026CA3FB200E6E7E2 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		5A82473226CA404900E6E7E2 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		5A82473426CA407200E6E7E2 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		5A82473626CA408B00E6E7E2 /* Numbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
+		5A82473826CA40A400E6E7E2 /* Collections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collections.swift; sourceTree = "<group>"; };
+		5A82473A26CA40BA00E6E7E2 /* XTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTimer.swift; sourceTree = "<group>"; };
+		5A82473C26CA40D000E6E7E2 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		5A82473E26CA40EA00E6E7E2 /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		5A82474026CA40FD00E6E7E2 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		5A82474226CA411500E6E7E2 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		5A82474526CA414C00E6E7E2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5A82474726CA417F00E6E7E2 /* MulticastDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastDelegate.swift; sourceTree = "<group>"; };
+		5A82474B26CA436900E6E7E2 /* QuotesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesService.swift; sourceTree = "<group>"; };
+		5A82474D26CA45F800E6E7E2 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		5A82474F26CA462000E6E7E2 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		5A82475126CA466A00E6E7E2 /* Geometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
 		5CAA5AA5B347DB14EB80F391 /* Pods-Motivation-AppClip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivation-AppClip.release.xcconfig"; path = "Target Support Files/Pods-Motivation-AppClip/Pods-Motivation-AppClip.release.xcconfig"; sourceTree = "<group>"; };
 		654B3984B6C30F296D09CE8C /* Pods-Motivation-Watch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivation-Watch Extension.release.xcconfig"; path = "Target Support Files/Pods-Motivation-Watch Extension/Pods-Motivation-Watch Extension.release.xcconfig"; sourceTree = "<group>"; };
 		6F6DA4F061B3AE9E4913189C /* Pods-Motivation-WidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivation-WidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-Motivation-WidgetExtension/Pods-Motivation-WidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
@@ -179,7 +219,7 @@
 		936886852545D18E0034F960 /* QuoteGeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteGeneratorView.swift; sourceTree = "<group>"; };
 		936886CA25469D460034F960 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 		9370A51D25454CD100F2C029 /* ViewToUIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewToUIImage.swift; sourceTree = "<group>"; };
-		9370A52B2545609A00F2C029 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9370A52B2545609A00F2C029 /* QuoteCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteCD.swift; sourceTree = "<group>"; };
 		9370D5A625356310001CD387 /* ShareSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheetView.swift; sourceTree = "<group>"; };
 		9371931825B878FA00D4A8B1 /* ShakeGestureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeGestureManager.swift; sourceTree = "<group>"; };
 		9377471425CE56EA005CFB46 /* Motivation-AppClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Motivation-AppClip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -236,6 +276,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AEF23E39176789C05E67FB6 /* Pods_Motivation_Watch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +324,72 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		5A82472A26CA3EE200E6E7E2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				938DD63C2600765C00C2FC6C /* LocalNotificationManager.swift */,
+				5A82472B26CA3F0F00E6E7E2 /* ValueStorage.swift */,
+				5A82474B26CA436900E6E7E2 /* QuotesService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5A82472D26CA3F5700E6E7E2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5A82472E26CA3F6300E6E7E2 /* Common.swift */,
+				5A82473226CA404900E6E7E2 /* String.swift */,
+				5A82473426CA407200E6E7E2 /* Array.swift */,
+				5A82473626CA408B00E6E7E2 /* Numbers.swift */,
+				5A82473826CA40A400E6E7E2 /* Collections.swift */,
+				5A82473A26CA40BA00E6E7E2 /* XTimer.swift */,
+				5A82473C26CA40D000E6E7E2 /* Date.swift */,
+				5A82473E26CA40EA00E6E7E2 /* URL.swift */,
+				5A82474026CA40FD00E6E7E2 /* Formatter.swift */,
+				5A82474226CA411500E6E7E2 /* Bundle.swift */,
+				5A82474D26CA45F800E6E7E2 /* View.swift */,
+				9370A52B2545609A00F2C029 /* QuoteCD.swift */,
+				5A82474F26CA462000E6E7E2 /* UIColor.swift */,
+				5A82475126CA466A00E6E7E2 /* Geometry.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5A82474426CA413D00E6E7E2 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				5A82474526CA414C00E6E7E2 /* Constants.swift */,
+				5A82474726CA417F00E6E7E2 /* MulticastDelegate.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		5A82475726CA471700E6E7E2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				936886CA25469D460034F960 /* ButtonStyle.swift */,
+				9370A51D25454CD100F2C029 /* ViewToUIImage.swift */,
+				93F0BE65256CD29000ABC037 /* AppReviewRequest.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5A82475926CA473400E6E7E2 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				9395DD75255454A300B30BC2 /* CoreDataStack.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		5A82475A26CA4A2D00E6E7E2 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				5A2AAD2526C8E05600241A18 /* Storage.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
 		5AD723AB26C8544E00017AAA /* Other */ = {
 			isa = PBXGroup;
 			children = (
@@ -300,14 +407,11 @@
 		933991812694A77B00EC8CDF /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				9395DD75255454A300B30BC2 /* CoreDataStack.swift */,
-				938DD63C2600765C00C2FC6C /* LocalNotificationManager.swift */,
+				5A82475726CA471700E6E7E2 /* Components */,
+				5A82472D26CA3F5700E6E7E2 /* Extensions */,
+				5A82474426CA413D00E6E7E2 /* Constants */,
+				5A82475926CA473400E6E7E2 /* Storage */,
 				93C8F69E256423FE0072589B /* PrimaryQuote.swift */,
-				9370A52B2545609A00F2C029 /* Extensions.swift */,
-				93F0BE65256CD29000ABC037 /* AppReviewRequest.swift */,
-				9370A51D25454CD100F2C029 /* ViewToUIImage.swift */,
-				936886CA25469D460034F960 /* ButtonStyle.swift */,
-				5A2AAD2526C8E05600241A18 /* Storage.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -496,10 +600,13 @@
 		93DEB53D25284527006B9BF5 /* Motivation */ = {
 			isa = PBXGroup;
 			children = (
+				5A82473026CA3FB200E6E7E2 /* Application.swift */,
 				93DEB53E25284527006B9BF5 /* AppDelegate.swift */,
 				93DEB54025284527006B9BF5 /* SceneDelegate.swift */,
 				93DEB54525284527006B9BF5 /* ContentView.swift */,
 				933991812694A77B00EC8CDF /* Library */,
+				5A82472A26CA3EE200E6E7E2 /* Services */,
+				5A82475A26CA4A2D00E6E7E2 /* Session */,
 				935562072538135A00BF2F0A /* Quotes */,
 				9372A11C262DD57800276B08 /* Onboarding */,
 				93AA437A25F0958700AB7DF0 /* Settings */,
@@ -881,14 +988,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A82475826CA472500E6E7E2 /* AppReviewRequest.swift in Sources */,
 				9377471925CE56EA005CFB46 /* ContentView.swift in Sources */,
 				9308A1E925D1B83200F5F0E9 /* QuoteView.swift in Sources */,
 				9308A1B225D1B78000F5F0E9 /* ButtonStyle.swift in Sources */,
 				9308A1DE25D1B7EF00F5F0E9 /* ShareSheetView.swift in Sources */,
 				933E2E22264D939B008E8FE2 /* Quote.swift in Sources */,
+				5A82475526CA46CB00E6E7E2 /* View.swift in Sources */,
+				5A82475426CA46C200E6E7E2 /* Geometry.swift in Sources */,
 				9377471725CE56EA005CFB46 /* Motivation_AppClipApp.swift in Sources */,
 				9308A1BD25D1B78E00F5F0E9 /* ViewToUIImage.swift in Sources */,
-				9308A1A725D1B72B00F5F0E9 /* Extensions.swift in Sources */,
+				5A82475626CA46DB00E6E7E2 /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -918,32 +1028,50 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A82473126CA3FB200E6E7E2 /* Application.swift in Sources */,
 				93AA437425EF5B8B00AB7DF0 /* SettingsListView.swift in Sources */,
+				5A82473B26CA40BA00E6E7E2 /* XTimer.swift in Sources */,
+				5A82474326CA411500E6E7E2 /* Bundle.swift in Sources */,
 				93DEB53F25284527006B9BF5 /* AppDelegate.swift in Sources */,
 				9370D5A725356310001CD387 /* ShareSheetView.swift in Sources */,
+				5A82473726CA408B00E6E7E2 /* Numbers.swift in Sources */,
 				93DEB54425284527006B9BF5 /* Motivation.xcdatamodeld in Sources */,
 				9395DD76255454A300B30BC2 /* CoreDataStack.swift in Sources */,
 				93AA438825F0969A00AB7DF0 /* SettingsItems.swift in Sources */,
+				5A82474E26CA45F800E6E7E2 /* View.swift in Sources */,
 				93C735B2268CA1E900334A34 /* ReminderView.swift in Sources */,
 				938DD63D2600765C00C2FC6C /* LocalNotificationManager.swift in Sources */,
+				5A82473F26CA40EA00E6E7E2 /* URL.swift in Sources */,
 				93DEB54625284527006B9BF5 /* ContentView.swift in Sources */,
 				93DEB57325284631006B9BF5 /* Quote.swift in Sources */,
 				93C8F69F256423FE0072589B /* PrimaryQuote.swift in Sources */,
+				5A82473326CA404900E6E7E2 /* String.swift in Sources */,
 				93F0BE66256CD29000ABC037 /* AppReviewRequest.swift in Sources */,
+				5A82473D26CA40D000E6E7E2 /* Date.swift in Sources */,
 				936886CB25469D460034F960 /* ButtonStyle.swift in Sources */,
+				5A82474626CA414C00E6E7E2 /* Constants.swift in Sources */,
 				5A2AAD2626C8E05600241A18 /* Storage.swift in Sources */,
 				9392E4AF25408808004BF68E /* SearchBar.swift in Sources */,
+				5A82475026CA462000E6E7E2 /* UIColor.swift in Sources */,
+				5A82475326CA46B800E6E7E2 /* Geometry.swift in Sources */,
 				938DD65526031B2D00C2FC6C /* ReminderSheetView.swift in Sources */,
 				939DBEF4253ACFFC00A54AD2 /* QuoteRowView.swift in Sources */,
 				936886632545C8320034F960 /* QuoteListView.swift in Sources */,
+				5A82473926CA40A400E6E7E2 /* Collections.swift in Sources */,
+				5A82474826CA417F00E6E7E2 /* MulticastDelegate.swift in Sources */,
 				9362130B252D787A009A7CDE /* QuoteDetailView.swift in Sources */,
 				9371931925B878FE00D4A8B1 /* ShakeGestureManager.swift in Sources */,
+				5A82472F26CA3F6300E6E7E2 /* Common.swift in Sources */,
 				93DEB54125284527006B9BF5 /* SceneDelegate.swift in Sources */,
+				5A82474C26CA436900E6E7E2 /* QuotesService.swift in Sources */,
+				5A82472C26CA3F0F00E6E7E2 /* ValueStorage.swift in Sources */,
 				9370A51E25454CD100F2C029 /* ViewToUIImage.swift in Sources */,
 				93AA437C25F095A500AB7DF0 /* SettingsRowView.swift in Sources */,
-				93426350254DC5840023B6FF /* Extensions.swift in Sources */,
+				93426350254DC5840023B6FF /* QuoteCD.swift in Sources */,
 				9362130D252ECBC1009A7CDE /* QuoteView.swift in Sources */,
 				936886862545D18E0034F960 /* QuoteGeneratorView.swift in Sources */,
+				5A82473526CA407200E6E7E2 /* Array.swift in Sources */,
+				5A82474126CA40FD00E6E7E2 /* Formatter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -982,7 +1110,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Motivation-AppClip/Motivation_AppClip.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_ASSET_PATHS = "\"Motivation-AppClip/Preview Content\"";
 				DEVELOPMENT_TEAM = 5Q4J73RU3K;
 				ENABLE_PREVIEWS = YES;
@@ -1011,7 +1139,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Motivation-AppClip/Motivation_AppClip.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_ASSET_PATHS = "\"Motivation-AppClip/Preview Content\"";
 				DEVELOPMENT_TEAM = 5Q4J73RU3K;
 				ENABLE_PREVIEWS = YES;
@@ -1038,7 +1166,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_ASSET_PATHS = "\"Motivation-Watch Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 5Q4J73RU3K;
 				ENABLE_PREVIEWS = YES;
@@ -1067,7 +1195,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_ASSET_PATHS = "\"Motivation-Watch Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 5Q4J73RU3K;
 				ENABLE_PREVIEWS = YES;
@@ -1098,7 +1226,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 5Q4J73RU3K;
 				IBSC_MODULE = Motivation_Watch_Extension;
 				INFOPLIST_FILE = "Motivation-Watch/Info.plist";
@@ -1132,7 +1260,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 5Q4J73RU3K;
 				IBSC_MODULE = Motivation_Watch_Extension;
 				INFOPLIST_FILE = "Motivation-Watch/Info.plist";
@@ -1165,7 +1293,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Other/Motivation-WidgetExtension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 5Q4J73RU3K;
 				INFOPLIST_FILE = "Motivation-Widget/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -1193,7 +1321,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Other/Motivation-WidgetExtension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 5Q4J73RU3K;
 				INFOPLIST_FILE = "Motivation-Widget/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -1337,7 +1465,7 @@
 				CODE_SIGN_ENTITLEMENTS = Motivation/Motivation.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_ASSET_PATHS = "\"Other/Preview Content\"";
 				DEVELOPMENT_TEAM = 5Q4J73RU3K;
 				ENABLE_PREVIEWS = YES;
@@ -1366,7 +1494,7 @@
 				CODE_SIGN_ENTITLEMENTS = Motivation/Motivation.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_ASSET_PATHS = "\"Other/Preview Content\"";
 				DEVELOPMENT_TEAM = 5Q4J73RU3K;
 				ENABLE_PREVIEWS = YES;

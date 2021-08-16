@@ -3,7 +3,10 @@
 //  Created by Sergey Leschev on 15.08.21.
 //
 
+import Foundation
 import SwiftUI
+import CoreData
+import UIKit
 
 struct GetRect: ViewModifier {
 

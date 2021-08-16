@@ -11,6 +11,7 @@ target 'Motivation' do
   pod 'KeychainSwift'
   pod 'SwiftTryCatch'
   pod 'lottie-ios'
+  pod 'NVActivityIndicatorView'
 end
 
 target 'Motivation-AppClip' do

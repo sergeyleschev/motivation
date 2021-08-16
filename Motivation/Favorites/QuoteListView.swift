@@ -16,6 +16,8 @@ struct QuoteListView: View {
     @State private var startAnimation = false
     @EnvironmentObject var storage: Storage
     @State private var showBuying = false
+    
+    
     var body: some View {
         //   NavigationView {
         ZStack {
@@ -43,9 +45,10 @@ struct QuoteListView: View {
                 .navigationBarItems(trailing: EditButton())
                 .edgesIgnoringSafeArea(.bottom)
                 
-                if storage.amount == 3 { Button(action: { showBuying.toggle() }) {
+                if storage.amount == 10000 { Button(action: { showBuying.toggle() }) {
+                
                     HStack {
-                        Text("\(favoriteQuotes.count)/\(3)")
+                        Text("\(favoriteQuotes.count)/\(10000)")
                         Image(systemName: "cart.fill")
                             .overlay(
                                 Image(systemName: "cart.fill")
@@ -72,6 +75,7 @@ struct QuoteListView: View {
             
         }.onAppear {
             startAnimation.toggle()
+            storage.favoritesCount = favoriteQuotes.count
         }
         
         //  }

@@ -27,7 +27,7 @@ struct QuoteDetailView: View {
             
             Color.clear.overlay(
                 
-                QuoteView(quote: convert(quoteCD: favoriteQuote))
+                QuoteView(quote: QuotesService.main.convert(quoteCD: favoriteQuote))
                     .padding()
                 
             ).getRect($rect1)
@@ -36,7 +36,9 @@ struct QuoteDetailView: View {
             HStack {
                 
                 Button(action: {
-                    savePrimary(quoteCD: favoriteQuote)
+                    QuotesService.main.savePrimary(quoteCD: favoriteQuote) {
+                        addedToFavorites = true
+                    }
                 }) {
                     Image(systemName: addedToFavorites ? "checkmark.circle.fill" : "checkmark.circle")
                         .imageScale(.large)
@@ -70,24 +72,5 @@ struct QuoteDetailView: View {
             }
         }
         
-    }
-    
-    
-    func savePrimary(quoteCD: QuoteCD) {
-        
-        let quote = Quote(id: quoteCD.id ?? "", quoteText: quoteCD.wrappedQuoteText, quoteAuthor: quoteCD.wrappedQuoteAuthor, quoteGenre: quoteCD.wrappedQuoteGenre)
-        
-        if #available(iOS 14, *) {
-            let newPrimary = PrimaryQuote(primaryQuote: quote)
-            newPrimary.storeQuote()
-            
-        }
-        
-        addedToFavorites = true
-    }
-    
-    func convert(quoteCD: QuoteCD) -> Quote {
-        let quote = Quote(id: quoteCD.id ?? "", quoteText: quoteCD.wrappedQuoteText, quoteAuthor: quoteCD.wrappedQuoteAuthor, quoteGenre: quoteCD.wrappedQuoteGenre)
-        return quote
     }
 }

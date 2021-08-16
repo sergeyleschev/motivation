@@ -17,6 +17,8 @@ enum ActiveSheet: Identifiable {
 }
 
 struct QuoteGeneratorView: View {
+    typealias GetQuoteHandler = () -> Void
+    
     static let tag: String? = "Home"
     @Environment(\.managedObjectContext) var moc
     @State private var quote = Quote(id: "", quoteText: "Tap here", quoteAuthor: "Motivation", quoteGenre: "Fitness")
@@ -46,7 +48,9 @@ struct QuoteGeneratorView: View {
                     .animation(.spring())
                 
             ).getRect($rect1).padding()
-            .onAppear() { getQuote() }
+            .onAppear() {
+                getQuote { trySave() }
+            }
             .onChange(of: uiImage) { _ in self.uiImage = self.rect1.uiImage }
             .accessibility(addTraits: .isButton)
             .accessibility(label: Text("Change quote"))
@@ -94,7 +98,7 @@ struct QuoteGeneratorView: View {
     }
     
     
-    private func getQuote() {
+    private func getQuote(closure: GetQuoteHandler? = nil) {
         quote = Quote(id: "", quoteText: "", quoteAuthor: "", quoteGenre: "")
         
         getRandomQuote { quote in
@@ -103,11 +107,21 @@ struct QuoteGeneratorView: View {
             savedToDevice = false
             addedToClipboard = false
         }
+        
+        closure?()
+    }
+    
+    
+    private func trySave() {
+        XTimer.scheduledTimer(withTimeInterval: 2) {
+            if storage.favoritesCount == 0 {
+                saveToDevice(quote: quote)
+            }
+        }
     }
     
 
     func saveToDevice(quote: Quote) {
-        
         savedToDevice.toggle()
         
         if savedToDevice == true {
@@ -116,6 +130,10 @@ struct QuoteGeneratorView: View {
             favoriteQuote.quoteText = quote.quoteText
             favoriteQuote.quoteAuthor = quote.quoteAuthor
             favoriteQuote.quoteGenre = quote.quoteGenre
+            
+            storage.isFirstTap = false
+            storage.favoritesCount = storage.favoritesCount + 1
+            QuotesService.main.savePrimary(quoteCD: favoriteQuote)
             try? self.moc.save()
         } else {
             moc.undo()
