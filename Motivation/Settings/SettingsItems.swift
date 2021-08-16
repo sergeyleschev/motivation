@@ -25,7 +25,7 @@ struct Items {
              color: .systemGreen,
              title: "Privacy",
              section: .legal,
-             url: "https://fitness-motivation.flycricket.io/privacy.html"),
+             url: "https://motivations.coach/privacy.html"),
         
         /*
         Item(image: "globe",
