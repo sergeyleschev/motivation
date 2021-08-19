@@ -20,30 +20,11 @@ struct ContentView: View {
     
     var body: some View {
         
-        NavigationView {
+        QuoteGeneratorView(savedToDevice: $savedToDevice, favoriteQuotes: favoriteQuotes)
+            .tag(QuoteGeneratorView.tag)
+            .accessibilityLabel(Text("Random quotes"))
+            .accessibility(hint: Text("Find new quotes here"))
 
-            QuoteGeneratorView(savedToDevice: $savedToDevice, favoriteQuotes: favoriteQuotes)
-                .tag(QuoteGeneratorView.tag)
-                .accessibilityLabel(Text("Random quotes"))
-                .accessibility(hint: Text("Find new quotes here"))
-                .navigationBarItems(leading:
-                                        NavigationLink(destination: QuoteListView(removeQuote: removeQuote, favoriteQuotes: favoriteQuotes)) {
-                                            Image(systemName: "heart.fill")
-                                                .font(.largeTitle)
-                                                .foregroundColor(.red)
-                                        }
-                                        .accessibilityLabel(Text("Likes"))
-                                        .accessibility(hint: Text("Find your favorite quotes here")), trailing:
-                                        
-                                        NavigationLink(destination: SettingsView()) {
-                                            Image(systemName: "gearshape.fill")
-                                                .font(.largeTitle)
-                                                .foregroundColor(.red)
-                                        }
-                                        .accessibilityLabel(Text("Settings"))
-                                        .accessibility(hint: Text("Find settings and social links here")))
-
-        }.navigationViewStyle(StackNavigationViewStyle())
         .onAppear {
             moc.undoManager = UndoManager()
             AppReviewRequest.requestReviewIfNeeded()

@@ -34,65 +34,97 @@ struct QuoteGeneratorView: View {
     
     
     var body: some View {
+        GeometryReader { geometry in
         
-        VStack {
+            NavigationView {
 
-            Color.clear.overlay(
-                
-                QuoteView(quote: quote)
-                    .gesture(
-                        LongPressGesture().onChanged { _ in
-                            getQuote()
-                        }
-                    )
-                    .animation(.spring())
-                
-            ).getRect($rect1).padding()
-            .onAppear() {
-                getQuote { trySave() }
-            }
-            .onChange(of: uiImage) { _ in self.uiImage = self.rect1.uiImage }
-            .accessibility(addTraits: .isButton)
-            .accessibility(label: Text("Change quote"))
-            .accessibility(hint: Text("Changes quote when tapped, and display them"))
-            
-            HStack {
-                
-                Button(action: {
-                    saveToDevice(quote: quote)
-                }) {
-                    Image(systemName: savedToDevice ? "hand.thumbsup.fill" : "hand.thumbsup")
-                        .imageScale(.large)
-                        .foregroundColor(.red)
-                    
-                }.buttonStyle(ColoredButtonStyle())
-                .accessibilityLabel(Text("Save"))
-                .accessibility(hint: Text("Save the quote to your device, so you can access it later"))
-                
-                Button(action: {
-                    self.uiImage = self.rect1.uiImage
-                    if self.uiImage != nil {
-                        activeSheet = .shareSheetView
+                VStack {
+
+                    Image("Wallpaper")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: geometry.size.width + 300)
+                        .edgesIgnoringSafeArea(.all)
+                        .blur(radius: 8)
+                        .mask(Rectangle().edgesIgnoringSafeArea(.all))
+                        .overlay(
+                            Color.clear
+                                .frame(width: geometry.size.width - 50)
+                                .overlay(
+                                    VStack {
+                                        QuoteView(quote: quote)
+                                            .gesture(
+                                                LongPressGesture().onChanged { _ in
+                                                    getQuote()
+                                                }
+                                            )
+                                            .animation(.spring())
+                                        
+                                        Spacer().frame(maxHeight: 100)
+                                    
+                                        HStack {
+                                            
+                                            Button(action: {
+                                                saveToDevice(quote: quote)
+                                            }) {
+                                                Image(systemName: savedToDevice ? "hand.thumbsup.fill" : "hand.thumbsup")
+                                                    .imageScale(.large)
+                                                    .foregroundColor(.red)
+                                                
+                                            }.buttonStyle(ColoredButtonStyle())
+                                            .accessibilityLabel(Text("Save"))
+                                            .accessibility(hint: Text("Save the quote to your device, so you can access it later"))
+                                            
+                                            NavigationLink(destination: SettingsView()) {
+                                                    Image(systemName: "person.fill")
+                                                        .font(.largeTitle)
+                                                        .foregroundColor(.red)
+                                                }
+                                                .accessibilityLabel(Text("Settings"))
+                                                .accessibility(hint: Text("Find settings and social links here"))
+                                            
+                                            Button(action: {
+                                                self.uiImage = self.rect1.uiImage
+                                                if self.uiImage != nil {
+                                                    activeSheet = .shareSheetView
+                                                }
+                                            }) {
+                                                Image(systemName: "square.and.arrow.up")
+                                                    .foregroundColor(.red)
+                                                
+                                            }.buttonStyle(ColoredButtonStyle())
+                                            .accessibilityLabel(Text("Share quote"))
+                                            .accessibility(hint: Text("opens a share sheet view"))
+                                            
+                                        }
+                                        
+                                        .disabled(quote.quoteText == "")
+                                        
+                                    }
+                                )
+                                .padding()
+                        ).getRect($rect1).padding()
+                    .onAppear() {
+                        getQuote { trySave() }
                     }
-                }) {
-                    Image(systemName: "square.and.arrow.up")
-                        .foregroundColor(.red)
+                    .onChange(of: uiImage) { _ in self.uiImage = self.rect1.uiImage }
+                    .accessibility(addTraits: .isButton)
+                    .accessibility(label: Text("Change quote"))
+                    .accessibility(hint: Text("Changes quote when tapped, and display them"))
                     
-                }.buttonStyle(ColoredButtonStyle())
-                .accessibilityLabel(Text("Share quote"))
-                .accessibility(hint: Text("opens a share sheet view"))
-                
-            }.disabled(quote.quoteText == "")
-            
-        }.sheet(item: $activeSheet) { item in
-            switch item {
-            case .shareSheetView:
-                if uiImage != nil {
-                    ShareSheetView(activityItems: [
-                        self.uiImage!
-                    ])
+                }
+                .sheet(item: $activeSheet) { item in
+                    switch item {
+                    case .shareSheetView:
+                        if uiImage != nil {
+                            ShareSheetView(activityItems: [
+                                self.uiImage!
+                            ])
+                        }
+                    }
                 }
             }
+            .navigationViewStyle(StackNavigationViewStyle())
         }
         
     }

@@ -52,7 +52,7 @@
 		<key>UIColorName</key>
 		<string>LaunchScreenBackgroundColor</string>
 		<key>UIImageName</key>
-		<string>LaunchScreenImage</string>
+		<string>Wallpaper</string>
 	</dict>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>

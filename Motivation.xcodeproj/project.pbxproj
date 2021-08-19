@@ -1110,7 +1110,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Motivation-AppClip/Motivation_AppClip.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "\"Motivation-AppClip/Preview Content\"";
 				DEVELOPMENT_TEAM = 5Q4J73RU3K;
 				ENABLE_PREVIEWS = YES;
@@ -1139,7 +1139,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Motivation-AppClip/Motivation_AppClip.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "\"Motivation-AppClip/Preview Content\"";
 				DEVELOPMENT_TEAM = 5Q4J73RU3K;
 				ENABLE_PREVIEWS = YES;
@@ -1166,7 +1166,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "\"Motivation-Watch Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 5Q4J73RU3K;
 				ENABLE_PREVIEWS = YES;
@@ -1195,7 +1195,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "\"Motivation-Watch Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 5Q4J73RU3K;
 				ENABLE_PREVIEWS = YES;
@@ -1226,7 +1226,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 5Q4J73RU3K;
 				IBSC_MODULE = Motivation_Watch_Extension;
 				INFOPLIST_FILE = "Motivation-Watch/Info.plist";
@@ -1260,7 +1260,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 5Q4J73RU3K;
 				IBSC_MODULE = Motivation_Watch_Extension;
 				INFOPLIST_FILE = "Motivation-Watch/Info.plist";
@@ -1293,7 +1293,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Other/Motivation-WidgetExtension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 5Q4J73RU3K;
 				INFOPLIST_FILE = "Motivation-Widget/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -1321,7 +1321,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Other/Motivation-WidgetExtension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 5Q4J73RU3K;
 				INFOPLIST_FILE = "Motivation-Widget/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -1465,7 +1465,7 @@
 				CODE_SIGN_ENTITLEMENTS = Motivation/Motivation.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "\"Other/Preview Content\"";
 				DEVELOPMENT_TEAM = 5Q4J73RU3K;
 				ENABLE_PREVIEWS = YES;
@@ -1494,7 +1494,7 @@
 				CODE_SIGN_ENTITLEMENTS = Motivation/Motivation.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "\"Other/Preview Content\"";
 				DEVELOPMENT_TEAM = 5Q4J73RU3K;
 				ENABLE_PREVIEWS = YES;

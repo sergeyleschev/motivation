@@ -12,8 +12,21 @@ struct ReminderView: View {
     @State private var reminderEndTime = Date(timeIntervalSince1970: TimeInterval(19*60*60))
     @State private var sendReminders = true
     @EnvironmentObject var manager: LocalNotificationManager
+    
+    
     var body: some View {
+        
+        
         VStack {
+            
+            VStack {
+                LottieView(animationName: "countdown")
+                    .scaledToFit()
+                    .frame(width: 200, height: 200)
+                    .scaleEffect(0.2)
+            }.padding()
+            
+            Spacer().frame(maxHeight: 50)
             
             Toggle("Send Reminders", isOn: $sendReminders)
                 .onDisappear {
@@ -29,17 +42,9 @@ struct ReminderView: View {
                     }
                 }
             
-            VStack {
-                LottieView(animationName: "countdown")
-                    .scaledToFit()
-                    .frame(width: 200, height: 200)
-                    .scaleEffect(0.2)
-            }.padding()
+            Spacer().frame(maxHeight: 30)
             
-            //  Form {
             VStack {
-                Text("Set daily reminders.")
-                    .multilineTextAlignment(.center)
                 
                 HStack {
                     Text("Remind me")
@@ -50,24 +55,20 @@ struct ReminderView: View {
                     }
                     
                 }
-                //                DatePicker(selection: $reminderStartTime, displayedComponents: .hourAndMinute) {
-                //                    Text("Start at")
-                //                        .fontWeight(.bold)
-                //                }
-                //                DatePicker(selection: $reminderEndTime, displayedComponents: .hourAndMinute) {
-                //                    Text("End at")
-                //                        .fontWeight(.bold)
-                //                }
             }
             
-        }.padding(.horizontal)
+        }
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
+        .padding(.horizontal)
         .onAppear {
             UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
             print("removed pending notifications")
         }
-        .edgesIgnoringSafeArea(.top)
+//        .edgesIgnoringSafeArea(.top)
         
     }
+    
+    
     func setNotification() {
         
         let firstDateComponents = Calendar.current.dateComponents([.hour, .minute], from: reminderStartTime)

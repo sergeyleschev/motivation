@@ -9,12 +9,26 @@ import AVFoundation
 struct SettingsView: View {
     static let tag: String? = "Settings"
     var items = Items()
+    @Environment(\.managedObjectContext) var moc
     @State private var showBuying = false
+    @FetchRequest(entity: QuoteCD.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \QuoteCD.quoteAuthor, ascending: true)]) var favoriteQuotes: FetchedResults<QuoteCD>
+    
+    
     var body: some View {
                     
             VStack {
                 
                 List {
+                    
+                    Section(header: Text("Likes")) {
+                        NavigationLink(destination: QuoteListView(removeQuote: removeQuote, favoriteQuotes: favoriteQuotes)) {
+                            HStack {
+                                Image(systemName: "heart.fill")
+                                    .foregroundColor(.red)
+                                Text("Likes")
+                            }
+                        }
+                    }
                     
                     Section(header: Text("Reminders")) {
                         NavigationLink(destination: ReminderView()) {
@@ -62,6 +76,23 @@ struct SettingsView: View {
 //                .navigationBarTitleDisplayMode(.inline)
             }
         //}
+    }
+    
+    
+    func removeQuote(at offsets: IndexSet) {
+        for index in offsets {
+            let favoriteQuote = favoriteQuotes[index]
+            
+            moc.delete(favoriteQuote)
+            
+        }
+        
+        do {
+            try moc.save()
+        } catch {
+            return
+        }
+        
     }
 }
 

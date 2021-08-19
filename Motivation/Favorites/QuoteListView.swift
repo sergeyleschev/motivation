@@ -45,6 +45,7 @@ struct QuoteListView: View {
                 .navigationBarItems(trailing: EditButton())
                 .edgesIgnoringSafeArea(.bottom)
                 
+                /*
                 if storage.amount == 10000 { Button(action: { showBuying.toggle() }) {
                 
                     HStack {
@@ -65,6 +66,7 @@ struct QuoteListView: View {
                     .padding(8)
                 }
                 }
+                */
                 
             }.onReceive(messagePublisher) { _ in
                 // moc.undoManager = UndoManager()
