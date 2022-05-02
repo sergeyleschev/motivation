@@ -1,6 +1,6 @@
 PODS:
-  - KeychainSwift (19.0.0)
-  - lottie-ios (3.2.3)
+  - KeychainSwift (20.0.0)
+  - lottie-ios (3.3.0)
   - NVActivityIndicatorView (5.1.1):
     - NVActivityIndicatorView/Base (= 5.1.1)
   - NVActivityIndicatorView/Base (5.1.1)
@@ -26,13 +26,13 @@ SPEC REPOS:
     - SwiftyJSON
 
 SPEC CHECKSUMS:
-  KeychainSwift: a06190cf933ad46b1e0abc3d77d29c06331715c7
-  lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
+  KeychainSwift: 0ce6a4d13f7228054d1a71bb1b500448fb2ab837
+  lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
   NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   SwiftTryCatch: fb6d2b34abe48efd69578dac919293a44f95b481
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 8dcf7efb57416630c784649910dece64cb080ae2
+PODFILE CHECKSUM: e189462ddebec70437184871e6844c7e26c4fe84
 
-COCOAPODS: 1.10.2
+COCOAPODS: 1.11.3
