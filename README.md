@@ -1,7 +1,8 @@
 # Fitness Motivation
-###  Health &amp; Fitness iOS App / Motivations Coach. @ S. Leschev.
 
 Positive reminders are one of the simplest and most powerful tools for mental growth. It’s all about keeping the right thoughts top of mind from the get-go every day, so they’re readily available on those hard days when you need them most.
+
+###  Health &amp; Fitness iOS App @ S. Leschev.
 
 
 <a href="https://github.com/sergeyleschev/motivation"><img src="https://github.com/sergeyleschev/www.motivations.coach/blob/dev/1.jpg" alt="drawing" width="410"/></a>
