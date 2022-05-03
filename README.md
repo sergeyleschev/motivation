@@ -19,9 +19,7 @@ Positive reminders are one of the simplest and most powerful tools for mental gr
 
 <a href="https://leetcode.com/sergeyleschev/"><img src="https://github.com/sergeyleschev/sergeyleschev/blob/main/leetcode-ranking.png" alt="drawing" width="410"/></a>
 
-**Languages**: Swift, Shell, Database (T-SQL, PL/SQL, MySQL).
-
-**Algorithms**: linked lists, binary search, hash table, queue/stack, dfs/bfs, sort, heap/hash, two pointers, sliding window, tree, greedy problems etc.
+**Languages**: Swift, Shell, Database.
 
 # 🚀 Developer Roadmap
 - [X] S.Leschev iOS Developer [Roadmap](https://github.com/sergeyleschev/sergeyleschev/blob/main/sergeyleschev-ios-roadmap.md).
