@@ -24,3 +24,6 @@ Positive reminders are one of the simplest and most powerful tools for mental gr
 
 # 🚀 Developer Roadmap
 - [X] S.Leschev iOS Developer [Roadmap](https://github.com/sergeyleschev/sergeyleschev/blob/main/sergeyleschev-ios-roadmap.md).
+
+<a href="https://www.codewars.com/users/sergeyleschev"><img alt="Codewars" src="https://www.codewars.com/users/sergeyleschev/badges/small" /></a>
+
